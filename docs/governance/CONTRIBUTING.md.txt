@@ -1,0 +1,25 @@
+# Contribution Guide
+
+## Workflow - Mainline Branching Model
+
+We use a **Mainline (Trunk-Based) Development** model with short-lived feature branches. This choice supports our team size (4-5 developers), fast CI feedback (<5 minutes), and weekly release cadence. All development happens in feature branches off `main`, with features toggled until complete.
+
+### Branch Naming
+- `feature/issue-123-short-desc`
+- `bugfix/issue-456-fix-typo`
+- `hotfix/critical-security-patch`
+
+### Commit Style
+- Format: `type(scope): description`
+- Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- Example: `feat(auth): add MFA support`
+
+### Review SLA
+- First response within 24 hours
+- Complete review within 48 hours
+- Use @mentions for urgent reviews
+
+### Merge Policy
+- Squash merge for feature branches
+- Required: 1 approval + green CI
+- PR size: ≤300 LOC (split if larger)

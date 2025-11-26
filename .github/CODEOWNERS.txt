@@ -1,0 +1,18 @@
+# Global owners
+* @team-alpha @instructor1 @instructor2
+
+# Documentation
+docs/** @team-alpha/docs
+
+# Security-related
+src/auth/** @team-alpha/security @team-alpha/lead
+.github/workflows/ @team-alpha/security
+
+# API specifications
+openapi/** @team-alpha/api
+
+# Frontend components
+src/components/** @team-alpha/frontend
+
+# Backend services
+src/services/** @team-alpha/backend

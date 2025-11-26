@@ -1,0 +1,23 @@
+# Branch Protection Rules - main
+
+## Protection Settings
+- ✅ Require pull request reviews before merging
+- ✅ Required approving reviews: 1
+- ✅ Dismiss stale pull request approvals when new commits are pushed
+- ✅ Require status checks to pass before merging
+- ✅ Require branches to be up to date before merging
+- ✅ Require conversation resolution before merging
+- ✅ Require linear history
+- ❌ Allow force pushes
+- ❌ Allow deletions
+
+## Required Status Checks
+- test / test (Required)
+- test / lint (Required)
+- test / build (Required)
+- security-scan / security-scan (Required)
+
+## Screenshot
+![Branch Protection Settings](https://example.com/screenshots/branch-protection.png)
+
+*Note: Actual screenshot should show GitHub branch protection settings for main branch*

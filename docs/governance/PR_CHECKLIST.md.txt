@@ -1,0 +1,30 @@
+# PR Checklist
+
+## Required for all PRs
+- [ ] Linked to issue (Fixes #123)
+- [ ] Scope ≤300 LOC; self-review completed
+- [ ] Tests updated/added
+- [ ] Documentation updated (README, docs/)
+- [ ] CI pipeline passes
+- [ ] No secrets or sensitive data in code
+- [ ] License headers intact
+
+## UI-Specific
+- [ ] Screenshots included for visual changes
+- [ ] Mobile responsiveness verified
+- [ ] Accessibility tested (a11y)
+
+## Security
+- [ ] Input validation implemented
+- [ ] Authentication/authorization checks
+- [ ] No hardcoded credentials
+
+## Performance
+- [ ] Database queries optimized
+- [ ] No N+1 query problems
+- [ ] Large datasets handled efficiently
+
+## Team-Specific
+- [ ] Coverage maintained ≥80%
+- [ ] ESLint/Prettier rules followed
+- [ ] API changes documented in OpenAPI

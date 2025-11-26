@@ -1,0 +1,40 @@
+# Team Working Agreement
+
+## Roles & Responsibilities
+- **Tech Lead**: @alice - Final approval on architecture changes
+- **Docs Owner**: @bob - Documentation quality gate
+- **Security Owner**: @charlie - Security review for sensitive changes
+- **All Members**: Code reviews, testing, documentation
+
+## Review Service Level Agreement (SLA)
+- **First Response**: ≤24 hours during business days
+- **Complete Review**: ≤48 hours for normal priority
+- **Urgent Reviews**: Use @team-urgent mention + Slack DM
+
+## Communication Channels
+- **GitHub**: Code reviews, PR discussions
+- **Slack**: Daily standups, quick questions
+- **Email**: Formal decisions, meeting invites
+
+## Merge Queue Cadence
+- PRs merged twice daily: 10 AM and 4 PM
+- Hotfixes: Immediate after approval + CI green
+- Feature releases: Weekly on Fridays
+
+## Escalation Path for Stalled Reviews
+1. Wait 24 hours, then gentle reminder in PR
+2. After 36 hours, @mention specific reviewers
+3. After 48 hours, escalate to Tech Lead (@alice)
+4. Tech Lead reassigns or approves after review
+
+## Definition of Ready (DoR)
+- Issue clearly described
+- Acceptance criteria defined
+- Dependencies identified
+
+## Definition of Done (DoD)
+- Code reviewed and approved
+- All tests passing
+- Documentation updated
+- Deployed to staging
+- Product Owner verified

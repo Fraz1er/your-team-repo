@@ -1,0 +1,33 @@
+# Label Taxonomy
+
+## Type
+- `bug` - Something isn't working
+- `feature` - New functionality
+- `documentation` - Documentation improvements
+- `enhancement` - Improvement to existing feature
+- `question` - Further information is needed
+
+## Priority
+- `priority: critical` - Highest priority
+- `priority: high` - Important but not critical
+- `priority: medium` - Normal priority
+- `priority: low` - Nice to have
+
+## Scope
+- `scope: frontend` - Affects frontend code
+- `scope: backend` - Affects backend code
+- `scope: infrastructure` - DevOps/infrastructure changes
+- `scope: security` - Security-related changes
+
+## Status
+- `status: blocked` - Blocked by external factor
+- `status: ready for review` - Ready for code review
+- `status: in progress` - Actively being worked on
+- `status: needs testing` - Requires testing before merge
+
+## Size
+- `size: xs` - <10 lines
+- `size: s` - 10-50 lines
+- `size: m` - 50-200 lines
+- `size: l` - 200-500 lines
+- `size: xl` - 500+ lines (should be split)
