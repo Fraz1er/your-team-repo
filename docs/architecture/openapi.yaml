@@ -1,1 +1,29 @@
-one line
+openapi: 3.0.0
+info:
+  title: RSVP API
+  version: 1.0.0
+paths:
+  /v1/rsvp:
+    get:
+      summary: List RSVPs (cursor pagination)
+      parameters:
+        - in: query
+          name: cursor
+          schema: { type: string }
+        - in: query
+          name: limit
+          schema: { type: integer, maximum: 100, default: 50 }
+      responses:
+        '200': { description: OK }
+        '429': { description: Rate limited (retryable) }
+      x-slo:
+        p95_ms: 200
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        code: { type: string }
+        message: { type: string }
+        retryable: { type: boolean }
+        correlationId: { type: string }
