@@ -1,0 +1,7 @@
+# API Table
+
+| Resource | Method | Path | Auth | Req Params/Body | 200/201 | 4xx/5xx | Error Schema | Pagination | Idempotency | Versioning | Notes |
+|----------|--------|------|------|------------------|---------|---------|--------------|------------|-------------|-----------|-------|
+| RSVPs | GET | /v1/rsvps | Bearer rsvp:read | limit,cursor | 200 list | 401,403,429,5xx | error_v1 | cursor; default=25 | n/a | /v1 | ex: examples/rsvp_list.json |
+| RSVPs | POST | /v1/rsvps | Bearer rsvp:write | body: examples/rsvp_create.json | 201 item | 400,401,403,409,422,429,5xx | error_v1 | n/a | Idempotency-Key; reuse 201 body (1h) | /v1 | UC: capacity→409 |
+``
