@@ -12,4 +12,4 @@ Index of required Part 3 artifacts.
 - [status_200.json](../docs/api/examples/status_200.json)
 - [error_422.json](../docs/api/examples/error_422.json)
 
-✅ Instructor access confirmed.
+Instructor access (yes).
